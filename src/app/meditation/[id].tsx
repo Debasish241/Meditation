@@ -8,6 +8,7 @@ import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import Slider from "@react-native-community/slider";
 import { useAudioPlayer, useAudioPlayerStatus } from "expo-audio";
 import audio from "../../../assets/meditations/audio1.mp3";
+import audio1 from "../../../assets/meditations/audio2.mp3";
 
 import {
   SafeAreaView,
@@ -15,7 +16,7 @@ import {
 } from "react-native-safe-area-context";
 export default function MeditationDetails() {
   const { id } = useLocalSearchParams<{ id: string }>();
-  const player = useAudioPlayer(audio);
+  const player = useAudioPlayer(audio1);
   const status = useAudioPlayerStatus(player);
   const meditation = meditations.find((m) => m.id === Number(id));
 

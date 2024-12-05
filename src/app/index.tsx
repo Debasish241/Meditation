@@ -8,7 +8,7 @@ export default function HomeScreen() {
   return (
     <FlatList
       className="bg-white"
-      contentContainerClassName="gap-5 p-3"
+      contentContainerClassName="gap-8 p-3"
       data={meditations}
       renderItem={({ item }) => <MeditationListItem meditation={item} />}
     />
